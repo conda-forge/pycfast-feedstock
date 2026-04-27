@@ -1,12 +1,12 @@
 context:
-  version: "0.1.4"
+  version: "0.2.0"
 package:
   name: pycfast
   version: ${{ version }}
 
 source:
   url: https://pypi.org/packages/source/p/pycfast/pycfast-${{ version }}.tar.gz
-  sha256: 23648a167ab105dd1b8a7688385d7eceb26dab215c5787afcc7c4bf871290f31
+  sha256: 906d9a09e02573cbde72445fb36c7f7ecfd321c4e62214f0c1b2dc6f80a52dd5
 
 build:
   noarch: python
