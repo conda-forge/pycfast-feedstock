@@ -1,12 +1,12 @@
 context:
-  version: "0.2.1"
+  version: "0.2.2"
 package:
   name: pycfast
   version: ${{ version }}
 
 source:
   url: https://pypi.org/packages/source/p/pycfast/pycfast-${{ version }}.tar.gz
-  sha256: 940af5dc54270f0867f428735bfc0e3a949449b2a31b2067f6991b5d945828d6
+  sha256: fcbffa485a9656c95576b1dcc39405f575e3f5a8cf419093f273d15135e809a2
 
 build:
   noarch: python
@@ -16,8 +16,8 @@ build:
 requirements:
   host:
     - python ${{ python_min }}.*
-    - setuptools >=61.0
-    - wheel
+    - hatchling
+    - hatch-vcs
     - pip
   run:
     - python >=${{ python_min }}
